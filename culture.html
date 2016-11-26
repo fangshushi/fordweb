@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>福特文化</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/culture.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="top">
+	<div class="topleft">
+    	<div class="logo"><a href="index.html"><img src="images/culture/logo.png"/></a></div>
+        <div class="slogan">
+        	<p>福特文化</p>
+            <p>让福特更加强大</p>
+        </div>
+    </div>
+     <div class="topright">
+     <span class="right"></span>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="show.html">车型展示</a></li>
+        <li><a href="buy.html">购车专区</a></li>
+        <li><a href="service.html">车主服务</a></li>
+        <li><a href="technology.html">福特科技</a></li>
+        <li><a href="culture.html">福特文化</a></li>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".topright span.right").on("click",function(){
+        var val = $(this).attr('class');
+        if(val.indexOf('on') == -1){
+            $(this).addClass('on');
+            $(".menu").show(0).stop().animate({
+                height:'310px'
+            },0);
+        }else{
+            $(this).removeClass('on');
+            $(".menu").hide(0).stop().animate({
+                height:'0'
+            },0);
+        }
+    })
+	
+	$(".menu a").on("click",function(){
+        $(this).parents(".menu").hide();
+        $(".topright span.right").removeClass('on');
+    })
+	
+});
+</script>
+<div class="menu2">
+	<ul>
+    	<li class="active"><a href="#">新闻中心</a></li>
+        <li><a href="#">诚聘英才</a></li>
+        <li><a href="#">关于福特</a></li>
+        <li class="nomorgin"><a href="#">品牌体验</a></li>
+    </ul>
+</div>
+<div class="content">
+	<p>新闻中心</p>
+    <div class="news_list">
+    	<div class="section fl">
+        	<a href="#"><img src="images/culture/xw1.jpg"/></a>
+            <p class="title"><a href="#">尊崇焕新品智升级 2017款福特金牛座全系荣耀上市</a></p>
+            <p class="newscontent"><a href="#">今日，长安福特宣布2017款福特金牛座全系荣耀上市，共推出6款车型供消费者选择，包括1.5升排量EcoBoost® 180车型、2.0升排量EcoBoost® 245车型以及2.7升排量EcoBoost®325车型，售价区间为234,800元-369,800元......</a></p>
+            <p class="date"><a href="#">/ 2016年10月20日</p></a>
+        </div>
+
+    	<div class="section fr">
+        	<a href="#"><img src="images/culture/xw2.jpg"/></a>
+            <p class="title"><a href="#">福特汽车9月份在华销量劲增24% 福特锐界等大放异彩</a></p>
+            <p class="newscontent"><a href="#">福特汽车9月份在华单月销量同比劲增24%，今年前三季度累计销量达879,559辆，较去年同期增长11% ·	长安福特汽车9月份单月销售84,335辆，同比增幅高达25%，今年累计销量达663,282辆，同比增长14%......</a></p>
+            <p class="date"><a href="#">/ 2016年10月11日</p></a>
+        </div>
+
+    	<div class="section fl">
+        	<a href="#"><img src="images/culture/xw3.jpg"/></a>
+            <p class="title"><a href="#">长安福特销量创史上最好九月 零售销量突破8.4万辆</a></p>
+            <p class="newscontent"><a href="#">今日，长安福特汽车有限公司公布了2016年9月零售销量，长安福特9月销量84,335辆，同比劲增25%。数据显示，第三季度长安福特销量持续保持增长，同比增长24%，创史上最好第三季度零售成绩，增长势头强劲......</a></p>
+            <p class="date"><a href="#">/ 2016年10月11日</p></a>
+        </div>
+
+    	<div class="section fr">
+        	<a href="#"><img src="images/culture/xw4.jpg"/></a>
+            <p class="title"><a href="#">福特 Mustang登顶中国跑车销量冠军 掀国内肌肉跑车热潮</a></p>
+            <p class="newscontent"><a href="#">福特旗下偶像级跑车Mustang 2016年前九个月在华销量同比增长38%，登顶中国跑车销量冠军 福特Mustang掀起国内肌肉跑车热潮，由粉丝自发组织的福特Mustang车主俱乐部成为国内最为活跃的车主俱乐部之一 ......</a></p>
+            <p class="date"><a href="#">/ 2016年10月10日</p></a>
+        </div>
+
+    	<div class="section fl">
+        	<a href="#"><img src="images/culture/xw5.jpg"/></a>
+            <p class="title"><a href="#">粉丝力量 制造流行 全新福特福克斯倾力赞助亚洲新歌榜年度盛典</a></p>
+            <p class="newscontent"><a href="#">首届亚洲新歌榜年度盛典于9月27日在北京落下帷幕。李宇春、吴亦凡、华晨宇、信、陈洁仪、陈粒、张碧晨、SNH48、仓木麻衣等极具粉丝号召力的歌手及音乐人悉数到场。全新福特福克斯作为总赞助商 “霸屏”现身，炫彩涂装惊艳全场......</a></p>
+            <p class="date"><a href="#">/ 2016年09月28日</p></a>
+        </div>
+
+    	<div class="section fr">
+        	<a href="#"><img src="images/culture/xw6.jpg"/></a>
+            <p class="title"><a href="#">挑战巅峰创造传奇 长安福特SUV家族见证超级马拉松世界纪录诞生</a></p>
+            <p class="newscontent"><a href="#">“挑战巅峰，创造传奇！”今天，长安福特100公里酒泉国际戈壁超级马拉松（以下简称戈壁超马）迎来了首位100公里戈壁马拉松的世界冠军。本次赛事，由长安福特SUV家族全线车型为大赛提供优质、安全的用车服务......</a></p>
+            <p class="date"><a href="#">/ 2016年09月25日</p></a>
+        </div>
+        <div class="icon clearfix">
+            <div class="pre">上一页</div>
+            <div class="next nomargin">下一页</div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="pagination1">当前位置：<a href="index.html">首页</a> >> <a href="#">福特文化</a> >> <a href="#">新闻中心</a></div>
+<div class="footer">
+    <div class="f_content">
+        <div class="info clearfix">
+            <a href="#">隐私权保护声明</a>
+            <a href="#">版权保护</a>
+            <a href="#">网站地图</a>
+            <a href="#">联系我们</a>
+            <a href="#">福特全球</a>
+            <a href="#">24小时服务热线</a>
+        </div>
+        <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+    </div>
+</div>
+</body>
+</html>

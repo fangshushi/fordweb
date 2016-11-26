@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>福特汽车-车型展示</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/show.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="top">
+	<div class="topleft">
+    	<div class="logo"><a href="index.html"><img src="images/show/logo.png"/></a></div>
+        <div class="slogan">
+        	<p>车型展示</p>
+            <p>每一款都精心打磨 打造极致体验</p>
+        </div>
+    </div>
+     <div class="topright">
+     <span class="right"></span>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="show.html">车型展示</a></li>
+        <li><a href="buy.html">购车专区</a></li>
+        <li><a href="service.html">车主服务</a></li>
+        <li><a href="technology.html">福特科技</a></li>
+        <li><a href="culture.html">福特文化</a></li>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".topright span.right").on("click",function(){
+        var val = $(this).attr('class');
+        if(val.indexOf('on') == -1){
+            $(this).addClass('on');
+            $(".menu").show(0).stop().animate({
+                height:'310px'
+            },0);
+        }else{
+            $(this).removeClass('on');
+            $(".menu").hide(0).stop().animate({
+                height:'0'
+            },0);
+        }
+    })
+	
+	$(".menu a").on("click",function(){
+        $(this).parents(".menu").hide();
+        $(".topright span.right").removeClass('on');
+    })
+	
+});
+</script>
+<div class="menu2">
+	<ul>
+    	<li><a href="#section_one">轿车</a></li>
+        <li><a href="#section_two">SUV</a></li>
+        <li><a href="#section_three">MPV</a></li>
+        <li><a href="#section_four">性能车</a></li>
+        <li><a href="#section_five">商务车</a></li>
+    </ul>
+</div>
+<a name="section_one"></a>
+<div class="section_one">
+	<div class="title">轿车</div>
+    <div class="carlist">
+    	<div class="car">
+        	<img src="images/show/car1.png"/>
+            <p class="title">福特新嘉年华</p>
+            <p class="price">￥ 79900 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/car2.png"/>
+            <p class="title">福特新嘉年华</p>
+            <p class="price">￥ 79900 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/car3.png"/>
+            <p class="title">福特新嘉年华</p>
+            <p class="price">￥ 79900 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car nomargin">
+        	<img src="images/show/car4.png"/>
+            <p class="title">福特新嘉年华</p>
+            <p class="price">￥ 79900 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    </div>
+    <div class="icon">
+        <div class="pre">上一页</div>
+        <div class="next nomargin">下一页</div>
+    </div>
+</div>
+<a name="section_two"></a>
+<div class="section_one">
+	<div class="title">SUV</div>
+    <div class="carlist">
+    	<div class="car">
+        	<img src="images/show/suv1.png"/>
+            <p class="title">福特翼博</p>
+            <p class="price">￥ 94800 元起</p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/suv2.png"/>
+            <p class="title">福特翼虎</p>
+            <p class="price">￥ 193800 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/suv3.png"/>
+            <p class="title">福特锐界</p>
+            <p class="price">￥ 249800 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car nomargin">
+        	<img src="images/show/suv4.png"/>
+            <p class="title">全新福特撼路者</p>
+            <p class="price">￥ 265800 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    </div>
+    <div class="icon clearfix">
+        <div class="pre">上一页</div>
+        <div class="next nomargin">下一页</div>
+    </div>
+</div>
+<a name="section_three"></a>
+<div class="section_one clearfix">
+	<div class="title">MPV</div>
+    <div class="carlist">
+    	<div class="car">
+        	<img src="images/show/MPV.png"/>
+            <p class="title">福特翼博</p>
+            <p class="price">￥ 94800 元起</p>
+            <p class="more">查看详情</p>
+        </div>
+    </div>
+<a name="section_two"></a>
+<div class="section_one">
+	<div class="title">性能车</div>
+    <div class="carlist">
+    	<div class="car">
+        	<img src="images/show/xn1.png"/>
+            <p class="title">福特嘉年华ST</p>
+            <p class="price">￥ 185900 元起</p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/xn2.png"/>
+            <p class="title">福特福克斯ST</p>
+            <p class="price">￥ 259800 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/xn3.png"/>
+            <p class="title">全新福克斯RS</p>
+            <p class="price">￥ 389000 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car nomargin">
+        	<img src="images/show/xn4.png"/>
+            <p class="title">福特MUSTANG</p>
+            <p class="price">￥ 399800 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    </div>
+    <div class="icon clearfix">
+        <div class="pre">上一页</div>
+        <div class="next nomargin">下一页</div>
+    </div>
+</div>
+<a name="section_five"></a>
+<div class="section_one">
+	<div class="title">商务车</div>
+    <div class="carlist">
+    	<div class="car">
+        	<img src="images/show/sw1.png"/>
+            <p class="title">经典全顺</p>
+            <p class="price">￥ 114800 元起</p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/sw2.png"/>
+            <p class="title">新世代全顺</p>
+            <p class="price">￥ 161000 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car">
+        	<img src="images/show/sw3.png"/>
+            <p class="title">全顺改装车</p>
+            <p class="price">￥ 181000 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    	<div class="car nomargin">
+        	<img src="images/show/sw4.jpg"/>
+            <p class="title">新全顺</p>
+            <p class="price">￥ 258000 元起 </p>
+            <p class="more">查看详情</p>
+        </div>
+    </div>
+    <div class="icon">
+        <div class="pre">上一页</div>
+        <div class="next nomargin">下一页</div>
+    </div>
+</div>
+</div>
+<div class="clearfix"></div>
+<div class="pagination1">当前位置：<a href="index.html">首页</a> >> <a href="#">车型展示</a></div>
+<div class="footer">
+    <div class="f_content">
+        <div class="info clearfix">
+            <a href="#">隐私权保护声明</a>
+            <a href="#">版权保护</a>
+            <a href="#">网站地图</a>
+            <a href="#">联系我们</a>
+            <a href="#">福特全球</a>
+            <a href="#">24小时服务热线</a>
+        </div>
+        <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+    </div>
+</div>
+</body>
+</html>

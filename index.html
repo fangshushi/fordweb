@@ -1,0 +1,274 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福特汽车-首页</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/banner.css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.banner.revolution.min.js"></script>
+<script type="text/javascript" src="js/banner.js"></script>
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome-ie7.min.css">
+<![endif]-->
+
+<script>
+$(function () {
+	var navLi=$(".menu .nav li");
+	navLi.mouseover(function () {
+		$(this).find("a").addClass("current");
+		$(this).find(".box").stop().slideDown();
+		$("#wrapper").css("margin-top","70px");
+	})
+	navLi.mouseleave(function(){
+		$(this).find("a").removeClass("current");
+		$(this).find(".box").stop().slideUp();
+		$("#wrapper").css("margin-top","20px");
+	})
+})
+</script>
+</head>
+
+<body>
+	<div class="header">
+    	<div class="logo"><img src="images/index/logo.jpg" /></div>
+<!--        <div class="menu">
+        	<ul>
+            	<li><a href="#">福特首页</a></li>
+                <li><a href="#">车型展示</a></li>
+                <li><a href="#">购车专区</a></li>
+                <li><a href="#">车主服务</a></li>
+                <li><a href="#">福特科技</a></li>
+                <li class="nomargin"><a href="#">福特文化</a></li>
+                <li class="move"></li>
+            </ul>
+        </div>-->
+
+        <div class="searchbox fr">
+            <input type="text" class="search_input fl"/>
+            <button class="search_btn fr" type="submit">
+                <i class="icon-search"></i>
+            </button>
+        </div>
+    </div>
+<div class="menu">
+		<ul class="nav">
+			<li><a href="show.html">车型展示</a>
+				<div class="box">
+					<a href="show.html">轿车</a>
+					<a href="show.html">SUV</a>
+					<a href="show.html">MPV</a>
+					<a href="show.html">性能车</a>
+					<a href="show.html">商务车</a>
+				</div> 
+            </li>
+			<li>
+				<a href="buy.html">购车专区</a>
+				<div class="box">
+					<a href="buy.html">福特金融</a>
+					<a href="buy.html">大客户业务</a>
+					<a href="buy.html">二手车</a>
+					<a href="buy.html">定制车辆</a>
+					<a href="buy.html">预约试驾</a>
+				</div>
+			</li>
+			<li>
+				<a href="service.html">车主服务</a>
+				<div class="box">
+					<a href="service.html">长安福特客户服务</a>
+					<a href="service.html">福特中国客户服务</a>
+					<a href="service.html">SYNC支持</a>
+					<a href="service.html">经销商查询</a>
+                    <a href="service.html">联系我们</a>
+                    <a href="service.html">车主俱乐部</a>
+				</div>
+			</li>
+			<li><a href="technology.html">福特科技</a>
+				<div class="box">
+					<a href="technology.html">智能科技</a>
+					<a href="technology.html">Ecoboost</a>
+					<a href="technology.html">SYNC</a>
+				</div>
+            </li>
+			<li><a href="culture.html">福特文化</a>
+				<div class="box">
+					<a href="culture.html">新闻中心</a>
+					<a href="culture.html">诚聘英才</a>
+					<a href="culture.html">关于福特</a>
+                    <a href="culture.html">品牌体验</a>
+				</div>
+            </li>
+		</ul>
+	</div>
+<div id="wrapper">
+	<div class="fullwidthbanner-container">
+		<div class="fullwidthbanner">
+			<ul>
+				<li data-transition="3dcurtain-horizontal" data-slotamount="15" data-masterspeed="300" data-link="#">
+					<img src="images/index/slides/banner.jpg" width="1920" height="750" alt=""/>									
+				</li>
+				<li data-transition="3dcurtain-vertical" data-slotamount="15" data-masterspeed="300" data-link="#">
+					<img src="images/index/slides/banner2.jpg" width="1920" height="640" alt=""/>
+				</li>
+				<li data-transition="papercut" data-slotamount="15" data-masterspeed="300" data-link="#">
+					<img src="images/index/slides/banner3.jpg" width="1920" height="640" alt=""/>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+    <div class="newproduct">
+    	<div class="left">
+            <img src="images/index/wenzi.jpg" class="textpic" />
+            <img src="images/index/number.jpg" class="number"/>
+        </div>
+        <div class="middle">
+        	<p class="title">福特金牛座</p>
+            <p class="content">大气、自信的设计风格，和谐均衡的车身比例，满足中国商务人士的消费需求。</p>
+            <div class="icon_left"><i class="icon-angle-left"></i></div>
+        </div>
+        <div class="right">
+        	<div class="icon_right"><i class="icon-angle-right"></i></div>
+        </div>
+    </div>
+    <div class="news">
+
+        <div class="left">
+            <div class="mes">
+                <p>资讯中心</p>
+                <p>NEWS</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="wrapper">
+                <input type="radio" name="list"/>
+                <input type="radio" name="list"/>
+                <input type="radio" name="list"/><br/>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="list"></div>
+                <div class="mes mes-1">
+                    <p>资讯/<span>01</span></p>
+                    <p>新福特翼虎亮相南京车展</p>
+                    <p>福特翼虎车型上市3年来已获得超过40万车主的信赖与支持。立足于“出色智能SUV”的产品定位，新福特翼虎延续翼虎品牌高端智能精髓，集福特领先科技之大成，让智能科技再度升级，在设计、安全、驾驶以及互联等方面深度融合智能科技，进化整车性能；加之标配多达62项科技配置，其中更有12项重点智能配置提升,为本次车展上最闪耀的明星......</p>
+                </div>
+                <div class="mes mes-2">
+                    <p>资讯/<span>02</span></p>
+                    <p>勇往直前 持续领跑</p>
+                    <p>长安福特全新福特福克斯两厢赛车，在上海国际赛车场一骑绝尘获得冠军。长安福特车队车手崔岳从第二位发车，比赛伊始就轻松超越对手并将优势保持到终点，获得第一回合冠军。长安福特车队经过此役，继续领跑厂商积分榜首位。“长安福特一直全情投入中国赛车运动的发展。赛车运动的速度与激情加深了福克斯品牌与消费者之间的共鸣......</p>
+                </div>
+                <div class="mes mes-3">
+                    <p>资讯/<span>03</span></p>
+                    <p>福克斯赞助亚洲新歌榜年度盛典</p>
+                    <p>首届亚洲新歌榜年度盛典于9月27日在北京落下帷幕。李宇春、吴亦凡、华晨宇、信、陈洁仪、陈粒、张碧晨、SNH48、仓木麻衣等极具粉丝号召力的歌手及音乐人悉数到场。全新福特福克斯作为总赞助商 “霸屏”现身，炫彩涂装惊艳全场，与亿万粉丝携手共同开启了一场音乐盛宴.亚洲新歌榜是由新浪微博、新浪娱乐打造的亚洲流行音乐新歌趋势的权威榜单......</p>
+                </div>
+                <div class="button">
+                    <span>更多详情</span>
+                </div>
+            </div>
+        </div>
+        
+    <div class="newsdown">
+        <div class="wrapper">
+            <div class="cell">
+                <div class="mes mes-4">
+                    <p>轻松试驾 从未如此简单</p>
+                    <p>快速预约，体验到的才是真实的</p>
+                    <span></span>
+                </div>
+                <div class="button">
+                    <span>查看更多</span>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="mes mes-4">
+                    <p>总有一款福特，契合您的生活</p>
+                    <p>鉴赏全系车型，发现您的至爱</p>
+                    <span></span>
+                </div>
+                <div class="button">
+                    <span>全系车型</span>
+                </div>
+            </div>
+        </div>
+        <div class="img"></div>
+    </div>
+   <div class="video">
+   	<div class="v_left pic2">
+    	<a href="#"><img src="images/index/sp1.jpg"/></a>
+    	<div class="p_bg2"><span>福特眼镜蛇  霸气登场</span><i class="icon-play-circle"></i></div>
+    </div>
+    <div class="v_right">
+    	<div class="pic pic2">
+    		<a href="#"><img src="images/index/sp4.jpg"/></a>
+            <div class="p_bg"><span>福特蒙迪欧</span><i class="icon-play-circle"></i></div>
+        </div>
+        <div class="pic pic2">
+        	<a href="#"><img src="images/index/sp2.jpg"/></a>
+            <div class="p_bg"><span>福特猛禽</span><i class="icon-play-circle"></i></div>
+        </div>
+        <div class="pic pic2">
+        	<a href="#"><img src="images/index/sp5.jpg"/></a>
+            <div class="p_bg"><span>福特新蒙迪欧</span><i class="icon-play-circle"></i></div>
+         </div>   
+        <div class="pic pic2">
+        	<a href="#"><img src="images/index/sp6.jpg"/></a>
+            <div class="p_bg"><span>福特野马</span><i class="icon-play-circle"></i></div>
+        </div>
+    </div>
+   </div>
+   <div class="clearfix"></div>
+   <div class="v_down">
+   	<a href="#"><img src="images/index/left.jpg" class="margincenter"/></a>
+   	<a href="#"><img src="images/index/sp3.jpg"/></a>
+    <a href="#"><img src="images/index/sp7.jpg"/></a>
+    <a href="#"><img src="images/index/sp8.jpg"/></a>
+    <a href="#"><img src="images/index/sp9.jpg" /></a>
+    <a href="#"><img src="images/index/right.jpg" class="nomargin margincenter"/></a>
+   </div>
+   <div class="map">
+
+        <div class="mes">
+            <p><i class="icon-map-marker"></i></p>
+            <p>定位您的城市 搜寻经销商</p>
+        </div>
+	<div class="citylist">
+            <select>
+            	<option value ="1" selected="selected">中国</option>  
+                <option value ="2" >美国</option>
+                <option value ="3" >日本</option>
+                <option value ="4" >德国</option>    
+            </select>
+            <select>
+            	<option value ="1" selected="selected">省份</option>  
+                <option value ="2" >湖北</option> 
+                <option value ="3" >北京</option>
+                <option value ="4" >上海</option>
+                <option value ="5" >浙江</option>
+                <option value ="6" >江苏</option>     
+            </select>
+            <select>
+            	<option value ="1" selected="selected">城市</option>      
+            </select>
+            <button type="submit">搜索</button>
+    </div>
+   </div>
+   <div class="footer">
+   		<div class="f_content">
+        	<div class="info clearfix">
+            	<a href="#">隐私权保护声明</a>
+                <a href="#">版权保护</a>
+                <a href="#">网站地图</a>
+                <a href="#">联系我们</a>
+                <a href="#">福特全球</a>
+                <a href="#">24小时服务热线</a>
+            </div>
+            <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+        </div>
+   </div>
+</body>
+</html>

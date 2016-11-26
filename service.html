@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>福特汽车-车主服务</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/service.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+
+<body>
+<div class="top">
+	<div class="topleft">
+   	  <div class="logo"><a href="index.html"><img src="images/service/logo.png"/></a></div>
+        <div class="slogan">
+        	<p>车主服务</p>
+            <p>提供最贴心细致的服务</p>
+        </div>
+    </div>
+     <div class="topright">
+     <span class="right"></span>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="show.html">车型展示</a></li>
+        <li><a href="buy.html">购车专区</a></li>
+        <li><a href="service.html">车主服务</a></li>
+        <li><a href="technology.html">福特科技</a></li>
+        <li><a href="culture.html">福特文化</a></li>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".topright span.right").on("click",function(){
+        var val = $(this).attr('class');
+        if(val.indexOf('on') == -1){
+            $(this).addClass('on');
+            $(".menu").show(0).stop().animate({
+                height:'310px'
+            },0);
+        }else{
+            $(this).removeClass('on');
+            $(".menu").hide(0).stop().animate({
+                height:'0'
+            },0);
+        }
+    })
+	
+	$(".menu a").on("click",function(){
+        $(this).parents(".menu").hide();
+        $(".topright span.right").removeClass('on');
+    })
+	
+});
+</script>
+<div class="menu2">
+	<ul>
+    	<li><a href="#">长安福特客户服务</a></li>
+        <li><a href="#">福特中国客户服务</a></li>
+        <li><a href="#">用车指南</a></li>
+        <li><a href="#">SYNC</a></li>
+        <li class="active"><a href="#">经销商查询</a></li>
+        <li class="nomorgin"><a href="#">车主俱乐部</a></li>
+    </ul>
+</div>
+<div class="content">
+	<div class="c_left">
+    	<p class="title">经销商查询</p>
+        <div class="section_one">
+        	<p>省份</p>
+            <select>  
+                <option value ="1">湖南</option>  
+                <option value ="2" selected="selected">湖北</option>  
+                <option value="3">北京</option>  
+                <option value="4">上海</option>
+                <option value="4">浙江</option>  
+            </select> 
+        </div>
+        <div class="section_one">
+        	<p>城市</p>
+            <select>  
+                <option value ="1">孝感</option>  
+                <option value ="2" selected="selected">武汉</option>  
+                <option value="3">恩施</option>  
+                <option value="4">咸宁</option>
+                <option value="4">黄石</option>  
+            </select> 
+        </div>
+        <div class="section_one">
+        	<p>车系</p>
+            <select>  
+                <option value ="1">轿车</option>  
+                <option value ="2" selected="selected">请选择车系</option>  
+                <option value="3">SUV</option>  
+                <option value="4">商务车</option>
+                <option value="4">性能车</option>  
+            </select> 
+        </div>
+        <div class="zx">查询</div>
+        <div class="section_one">
+            <p>直接查询</p>
+            <div class="searchbox">
+                <input type="text" class="search_input fl"/>
+                <button class="search_btn fr" type="submit">
+                    <i class="icon-search"></i>
+                </button>
+        	</div>
+		</div>
+    </div>
+	<div class="map" id="dituContent"></div>
+</div>
+<div class="clearfix"></div>
+<div class="dealerlist">
+	<p class="title">附近经销商</p>
+    <div class="contentlist">
+    	<div class="section">
+        	<p>武汉合福缘汽车销售服务公司</p>
+            <p><i class="icon-map-marker"></i>武汉市洪山区和平乡铁机村2号</p>
+            <p><i class=" icon-phone"></i>销售:027-88776677</p>
+            <p><i class=" icon-phone"></i>服务:027-88775566</p>
+            <div class="load">
+            	<div class="lu">
+                	<a href="#"><span>路线</span></a>
+                </div>
+                <div class="more">
+                	<a href="#"><span>查看详情</span></a>
+                </div>
+            </div>
+        </div>
+    	<div class="section">
+        	<p>武汉黄浦威汉江岸开发区-台银城</p>
+            <p><i class="icon-map-marker"></i>武汉市江汉区常青路常宁里</p>
+            <p><i class=" icon-phone"></i>销售:027-65681936</p>
+            <p><i class=" icon-phone"></i>服务:027-65681936</p>
+            <div class="load">
+            	<div class="lu">
+                	<a href="#"><span>路线</span></a>
+                </div>
+                <div class="more">
+                	<a href="#"><span>查看详情</span></a>
+                </div>
+            </div>
+        </div>
+        
+    	<div class="section">
+        	<p>武汉黄浦威汉汽车服务有限责任公司</p>
+            <p><i class="icon-map-marker"></i>武汉市黄陂区汉口北大道</p>
+            <p><i class=" icon-phone"></i>销售:027-65681999</p>
+            <p><i class=" icon-phone"></i>服务:027-65681999</p>
+            <div class="load">
+            	<div class="lu">
+                	<a href="#"><span>路线</span></a>
+                </div>
+                <div class="more">
+                	<a href="#"><span>查看详情</span></a>
+                </div>
+            </div>
+        </div>
+        
+    	<div class="section">
+        	<p>武汉黄浦威汉东西湖区-金银潭</p>
+            <p><i class="icon-map-marker"></i>武汉市东西湖区金银潭大道58号</p>
+            <p><i class=" icon-phone"></i>销售:027-65681990</p>
+            <p><i class=" icon-phone"></i>服务:027-65681990</p>
+            <div class="load">
+            	<div class="lu">
+                	<a href="#"><span>路线</span></a>
+                </div>
+                <div class="more">
+                	<a href="#"><span>查看详情</span></a>
+                </div>
+            </div>
+        </div>
+
+    	<div class="section nomargin">
+        	<p>武汉威汉汽车销售有限责任公司</p>
+            <p><i class="icon-map-marker"></i>武汉汉阳区龙阳大道23号</p>
+            <p><i class=" icon-phone"></i>销售:027-68841000</p>
+            <p><i class=" icon-phone"></i>服务:027-68841000</p>
+            <div class="load">
+            	<div class="lu">
+                	<a href="#"><span>路线</span></a>
+                </div>
+                <div class="more">
+                	<a href="#"><span>查看详情</span></a>
+                </div>
+            </div>
+        </div>
+          
+    </div>
+
+</div>
+<div class="clearfix"></div>
+<div class="loadmore">加载更多</div>
+<div class="clearfix"></div>
+<div class="pagination1">当前位置：<a href="index.html">首页</a> >> <a href="#">车主服务</a> >> <a href="#">经销商查询</a></div>
+<div class="footer">
+    <div class="f_content">
+        <div class="info clearfix">
+            <a href="#">隐私权保护声明</a>
+            <a href="#">版权保护</a>
+            <a href="#">网站地图</a>
+            <a href="#">联系我们</a>
+            <a href="#">福特全球</a>
+            <a href="#">24小时服务热线</a>
+        </div>
+        <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.407793,30.514113);//定义一个中心点坐标
+        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_RIGHT,type:BMAP_NAVIGATION_CONTROL_ZOOM});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT,isOpen:0});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    
+    initMap();//创建和初始化地图
+</script>
+</html>

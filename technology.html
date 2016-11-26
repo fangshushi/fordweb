@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1,maximum-scale=1,maximum-scale=1, user-scalable=no" name="viewport">
+<title>福特汽车-福特科技</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/technology.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="top">
+	<div class="topleft">
+    	<div class="logo"><a href="index.html"><img src="images/technology/logo.png"/></a></div>
+        <div class="slogan">
+        	<p>福特科技</p>
+            <p>将汽车臻于完善</p>
+        </div>
+    </div>
+    <div class="topright">
+     <span class="right"></span>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="show.html">车型展示</a></li>
+        <li><a href="buy.html">购车专区</a></li>
+        <li><a href="service.html">车主服务</a></li>
+        <li><a href="technology.html">福特科技</a></li>
+        <li><a href="culture.html">福特文化</a></li>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".topright span.right").on("click",function(){
+        var val = $(this).attr('class');
+        if(val.indexOf('on') == -1){
+            $(this).addClass('on');
+            $(".menu").show(0).stop().animate({
+                height:'310px'
+            },0);
+        }else{
+            $(this).removeClass('on');
+            $(".menu").hide(0).stop().animate({
+                height:'0'
+            },0);
+        }
+    })
+	
+	$(".menu a").on("click",function(){
+        $(this).parents(".menu").hide();
+        $(".topright span.right").removeClass('on');
+    })
+	
+});
+</script>
+<div class="menu2">
+	<ul>
+    	<li class="active"><a href="#">智能科技</a></li>
+        <li><a href="#">Ecoboost</a></li>
+        <li class="nomorgin"><a href="#">SYNC</a></li>
+    </ul>
+</div>
+<div class="content">
+	<p>智能科技</p>
+    <div class="v_list">
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original.jpg"/></a>
+            <p><a href="#">硼钢</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_1.jpg"/></a>
+            <p><a href="#">自适应巡航系统</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_2.jpg"/></a>
+            <p><a href="#">低速行车安全系统</a></p>
+        </div>
+
+    	<div class="section nomargin">
+        	<a href="#"><img src="images/technology/original_3.jpg"/></a>
+            <p><a href="#">ESC电子稳定性控制系统</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_4.jpg"/></a>
+            <p><a href="#">EPAS电动助力转向系统</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_5.jpg"/></a>
+            <p><a href="#">后泊车传感器和摄像头</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_6.jpg"/></a>
+            <p><a href="#">扭矩矢量控制系统</a></p>
+        </div>
+
+    	<div class="section nomargin">
+        	<a href="#"><img src="images/technology/original_7.jpg"/></a>
+            <p><a href="#">无钥匙进入及一键启动系统</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_8.jpg"/></a>
+            <p><a href="#">六速双离合器变速器</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_9.jpg"/></a>
+            <p><a href="#">上坡辅助系统</a></p>
+        </div>
+
+    	<div class="section">
+        	<a href="#"><img src="images/technology/original_10.jpg"/></a>
+            <p><a href="#">感应式雨刮器</a></p>
+        </div>
+
+    	<div class="section nomargin">
+        	<a href="#"><img src="images/technology/original_11.jpg"/></a>
+            <p><a href="#">BLIS盲区监测系统</a></p>
+        </div>
+
+    </div>
+    <div class="more"><button>加载更多</button></div>
+</div>
+<div class="clearfix"></div>
+<div class="pagination1">当前位置：<a href="index.html">首页</a> >> <a href="#">福特科技</a> >> <a href="#">智能科技</a></div>
+<div class="footer">
+    <div class="f_content">
+        <div class="info clearfix">
+            <a href="#">隐私权保护声明</a>
+            <a href="#">版权保护</a>
+            <a href="#">网站地图</a>
+            <a href="#">联系我们</a>
+            <a href="#">福特全球</a>
+            <a href="#">24小时服务热线</a>
+        </div>
+        <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+    </div>
+</div>
+</body>
+</html>

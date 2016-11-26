@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>福特汽车-购车专区</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/buy.css">
+<link rel="stylesheet" type="text/css" href="Font-Awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+<div class="top">
+	<div class="topleft">
+   	  <div class="logo"><a href="index.html"><img src="images/buy/logo.png"/></a></div>
+        <div class="slogan">
+        	<p>购车专区</p>
+            <p>定制专属您自己的车型</p>
+        </div>
+    </div>
+     <div class="topright">
+     <span class="right"></span>
+    </div>
+    <div class="menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="show.html">车型展示</a></li>
+        <li><a href="buy.html">购车专区</a></li>
+        <li><a href="service.html">车主服务</a></li>
+        <li><a href="technology.html">福特科技</a></li>
+        <li><a href="culture.html">福特文化</a></li>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$(".topright span.right").on("click",function(){
+        var val = $(this).attr('class');
+        if(val.indexOf('on') == -1){
+            $(this).addClass('on');
+            $(".menu").show(0).stop().animate({
+                height:'310px'
+            },0);
+        }else{
+            $(this).removeClass('on');
+            $(".menu").hide(0).stop().animate({
+                height:'0'
+            },0);
+        }
+    })
+	
+	$(".menu a").on("click",function(){
+        $(this).parents(".menu").hide();
+        $(".topright span.right").removeClass('on');
+    })
+	
+});
+</script>
+<div class="menu2">
+	<ul>
+    	<li><a href="#">福特金融</a></li>
+        <li><a href="#">大客户业务</a></li>
+        <li><a href="#">二手车</a></li>
+        <li><a href="#">定制车辆</a></li>
+        <li class="active nomorgin"><a href="#">预约试驾</a></li>
+    </ul>
+</div>
+<div class="content">
+	<div class="section section_one">
+    	<p class="title">基本信息</p>
+        <div class="info_one fl">
+        	<p>称谓：</p>
+            <select>
+            	<option value ="1" selected="selected">先生</option>  
+                <option value ="2" >女士</option>   
+            </select>
+        </div>
+    
+        <div class="info_one fr">
+        	<p>姓名：</p>
+            <input type="text" placeholder="请填写您的真实姓名"/>
+        </div>
+        
+        <div class="info_one fl">
+        	<p>手机号：</p>
+            <input type="text" placeholder="请填写常用手机号码"/>
+        </div>
+
+        <div class="info_one fr">
+        	<p>邮箱：</p>
+            <input type="text" placeholder="请填写常用邮箱地址"/>
+        </div>
+
+        <div class="info_one fl">
+        	<p>省份：</p>
+            <select>
+            	<option value ="1" selected="selected">湖北</option>  
+                <option value ="2" >湖北</option> 
+                <option value ="3" >湖南</option>
+                <option value ="4" >江西</option>
+                <option value ="5" >江苏</option>
+                <option value ="5" >北京</option>  
+            </select>
+        </div>
+
+        <div class="info_one fr">
+        	<p>城市：</p>
+            <select>
+            	<option value ="1" selected="selected">武汉</option>  
+                <option value ="2" >恩施</option> 
+                <option value ="3" >咸宁</option>
+                <option value ="4" >十堰</option>
+                <option value ="5" >黄石</option>
+                <option value ="5" >孝感</option>     
+            </select>
+        </div>       
+
+    </div>
+    
+    <div class="section section_two">
+    	<p class="title">选择车型</p>
+        <div class="info_one fl">
+        	<p>选择车系：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择一个车系</option>  
+                <option value ="2" >福特撼路者</option>
+                <option value ="3" >福特新嘉年华</option> 
+                <option value ="4" >福特经典福克斯</option> 
+                <option value ="5" >福特福睿斯</option>    
+            </select>
+        </div>
+    
+        <div class="info_one fr">
+        	<p>选择车型：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择一款车型</option>      
+            </select>
+        </div>
+        
+        <div class="info_one fl">
+        	<p>经销商：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择经销商</option>      
+            </select>
+        </div>
+
+        <div class="info_one fr cal">
+        	<p>试驾时间：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择试驾时间</option>       
+            </select>
+        </div>       
+
+    </div>
+
+    <div class="section section_three">
+    	<p class="title">购车计划<span style="font-size:18px; color:#666;">（选填）</span></p>
+        <div class="info_one fl">
+        	<p>想要购买的车系：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择一个车系</option>  
+                <option value ="2" >福特撼路者</option>
+                <option value ="3" >福特新嘉年华</option> 
+                <option value ="4" >福特经典福克斯</option> 
+                <option value ="5" >福特福睿斯</option>    
+            </select>
+        </div>
+    
+        <div class="info_one fr">
+        	<p>想要购买的车型：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择一款车型</option>      
+            </select>
+        </div>
+        
+        <div class="info_one fl">
+        	<p>预计购买的时间：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择预计购买的额时间</option>      
+            </select>
+        </div>
+
+        <div class="info_one fr">
+        	<p>购买的预算：</p>
+            <select>
+            	<option value ="1" selected="selected">请选择购买预算</option>       
+            </select>
+        </div>       
+
+    </div>
+    
+    <div class="section section_four">
+    	<p class="title">补充说明<span style="font-size:18px; color:#666;">（选填）</span></p>
+			<textarea></textarea>
+    </div>
+    <div class="text">
+      	<p>您的信息我们将会严格保密，请放心填写</p>
+        <p><input type="radio" value="1">我已阅读<a href="#">免责声明</a>，同意接受来自福特的推广信息</p>
+    </div>
+    <div class="clearfix"></div>
+    <div class="sub"><button class="reg">提交</button></div>
+</div>
+<div class="help">
+	<div class="h_content">
+        <div class="section">
+            <a href="#"><img src="images/buy/qustion.png"/></a>
+            <p><a href="#">常见问题</a></p>
+        </div>
+        <div class="section">
+            <a href="#"><img src="images/buy/cont.png"/></a>
+            <p><a href="#">联系我们</a></p>
+        </div>
+        <div class="section">
+            <a href="#"><img src="images/buy/js.png" class="small"/></a>
+            <p><a href="#">金融服务</a></p>
+        </div>
+        <div class="section nomargin">
+            <a href="#"><img src="images/buy/esc.png" class="small"/></a>
+            <p><a href="#">二手车专区</a></p>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="pagination1">当前位置：<a href="index.html">首页</a> >> <a href="#">购车专区</a> >> <a href="#">预约试驾</a></div>
+<div class="footer">
+    <div class="f_content">
+        <div class="info clearfix">
+            <a href="#">隐私权保护声明</a>
+            <a href="#">版权保护</a>
+            <a href="#">网站地图</a>
+            <a href="#">联系我们</a>
+            <a href="#">福特全球</a>
+            <a href="#">24小时服务热线</a>
+        </div>
+        <div class="copyright">Copyright&nbsp;&copy;&nbsp;2016福特汽车（中国）有限公司 沪ICP备05031283号</div>
+    </div>
+</div>
+</body>
+</html>
